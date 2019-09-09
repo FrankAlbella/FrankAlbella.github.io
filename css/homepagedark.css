@@ -1,0 +1,161 @@
+ *, :before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-attachment: fixed, fixed;
+    background-color: #2D2D2D;
+    background-position: 85% 100%, top left;
+    background-repeat: no-repeat, repeat;
+    color: #F5F5F5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 100%;
+    line-height: 20px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+p {
+    margin: 0 0 10px;
+}
+input[type=image], img {
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+    transition: color .25s;
+    color: #d9d9d9;
+}
+a:hover, a:focus, a:active {
+    color: #F7F7F7;
+}
+a:focus {
+    outline: thin dotted #F7F7F7;
+}
+.jumbotron {
+    margin: 60px 0;
+    text-align: center;
+    transition: width .5s, height .5s, margin .5s, padding .5s;
+}
+.jumbotron h1 {
+    color: inherit;
+    font-family: inherit;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 10px 0;
+    cursor: default;
+    text-rendering: optimizelegibility;
+}
+.jumbotron .lead {
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 30px;
+    margin-bottom: 20px;
+    transition: font-size .5s;
+}
+.jumbotron .btn {
+    background: rgba(202, 230, 190, .75);
+    border: 1px solid #B7D1A0;
+    border-radius: 4px;
+    color: #468847;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    padding: 28px 48px;
+    text-shadow: 0 1px rgba(255, 255, 255, .5);
+    transition: background-color .25s, width .5s, height .5s;
+}
+.jumbotron .btn:hover, .jumbotron .btn:active, .jumbotron .btn:focus, .jumbotron .btn.drop {
+    background-color: #bce4aa;
+    text-decoration: none;
+}
+.alert {
+    background-color: #FCF8E3;
+    border: 1px solid #FBEED5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+}
+.alert-error {
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    color: #B94A48;
+}
+.alert-info {
+    background-color: #777;
+    border-color: #666;
+    color: #F7F7F7;
+}
+nav>ul, nav a {
+    color: #e1d2d2;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav>ul>li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+nav>ul>li:after {
+    content: "|";
+    margin: 0 8px;
+    opacity: .3;
+}
+nav>ul>li:last-child:after {
+    content: "";
+    margin: 0;
+}
+.pocky {
+    margin: 20px auto;
+    text-align: center;
+}
+.pocky img {
+    max-width: 100%}
+span.old {
+    text-transform: uppercase;
+    font-size: .8em;
+    border-radius: 4px;
+    background-color: #722726;
+    color: #fff;
+    padding: 2px 8px;
+    margin: 0 4px;
+    font-weight: 200;
+}
+section.ded {
+    opacity: .5;
+}
+@media only screen and (max-device-width:320px), only screen and (max-width:400px) {
+    body {
+    padding: 10px 0 0;
+}
+nav {
+    background-color: rgba(255, 255, 255, .75);
+    border: #FFF;
+    padding: 10px 0;
+}
+}a img  {
+     border: none;
+ }
+div.todo {
+    position: absolute !important;
+    left: 0px !important;
+    top: 50%;
+    background-color:#777;
+    border-color:#666;
+    color:#F7F7F7;
+}
+img.toggle {
+        position: fixed !important;
+        top: 0px !important;
+        right: 0px !important;
+        }
