@@ -292,21 +292,12 @@ span.old {
 section.ded {
     opacity: .5;
 }
-@media only screen and (max-device-width:320px), only screen and (max-width:400px) {
-    body {
-    padding: 10px 0 0;
-}
-nav {
-    background-color: rgba(255, 255, 255, .75);
-    border: #FFF;
-    padding: 10px 0;
-}
-}a img  {
+a img  {
      border: none;
- }
+}
 
 img.toggle {
         position: fixed !important;
         top: 0px !important;
         right: 0px !important;
-        }
+}
