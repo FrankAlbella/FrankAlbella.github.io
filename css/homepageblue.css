@@ -132,6 +132,7 @@ a:hover, a:focus, a:active {
 
 .header-container {
     position: absolute;
+    align-items: center;
     left: 0px;
     top: -75px;
     width: 100%;
@@ -143,20 +144,54 @@ a:hover, a:focus, a:active {
 }
 
 .header {
+    display: flex;
+    min-height: 75px;
+    width: 100%;
     position: relative;
+    background: #263238;
+    align-items: center;
+}
+
+.header_wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #263238;
     width: 100%;
-    min-height: 75px;
+    justify-content: space-between;
     padding: 0px 40px;
 }
 
-
-
 .logo {
+    align-self: flex-start;
     font-size: 48px;
+    height: 48px;
+    width: 48px;
+}
+
+.logo>a {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.nav {
+    align-self: center;
+    display: block;
+    position: relative;
+    height: 100%;
+}
+
+.nav>ul>li, .nav>li>ul>a {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.nav>ul>li>a:hover {
+    text-decoration: underline;
 }
 
 ::-webkit-scrollbar-track {
@@ -207,25 +242,25 @@ input {
 	min-height: 30px;
 	color: #cccccc;
 }
-nav>ul, nav a {
+.misc>nav>ul, .misc>nav a {
     color: #e1d2d2;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-nav>ul>li {
+.misc>nav>ul>li {
     display: inline-block;
     margin: 0;
     padding: 0;
     cursor: default;
 }
-nav>ul>li:after {
+.misc>nav>ul>li:after {
     content: "|";
     margin: 0 8px;
     opacity: .3;
 }
-nav>ul>li:last-child:after {
+.misc>nav>ul>li:last-child:after {
     content: "";
     margin: 0;
 }
