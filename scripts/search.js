@@ -45,6 +45,4 @@ document.addEventListener('DOMContentLoaded', function ()
 	document.getElementById('tBar').addEventListener('submit', searchSite);
 	
 	document.getElementById('rBar').addEventListener('submit', searchSite);
-	
-	document.getElementById('ecBar').addEventListener('submit', searchSite);
 });
