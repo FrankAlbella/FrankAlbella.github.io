@@ -121,8 +121,90 @@ a:hover, a:focus, a:active {
     right:0;
 }
 
+.corner-caret {
+    margin-left: 5px;
+    top: 0px;
+}
+
+.corner-caret>svg {
+    transition: all 0.5s ease 0s;
+    fill: white;
+    height: 20px;
+    width: 20px;
+}
+
+.corner-caret.active>svg {
+    transition: all 0.5s ease 0s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
 .hoverable:hover {
     cursor: pointer;
+}
+
+.header-container {
+    position: absolute;
+    align-items: center;
+    left: 0px;
+    top: -75px;
+    width: 100%;
+    transition: all 0.5s ease 0s;
+}
+
+.header-container.active {
+    top: 0px;
+}
+
+.header {
+    display: flex;
+    min-height: 75px;
+    width: 100%;
+    position: relative;
+    background: #263238;
+    align-items: center;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.logo {
+    font-size: 48px;
+    height: 100%;
+}
+
+.logo>a {
+    height: 100%;
+    display: block;
+}
+
+.nav {
+    align-self: center;
+    display: block;
+    position: relative;
+    height: 100%;
+}
+
+.nav>ul>li, .nav>li>ul>a {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.nav>ul>li>a:hover {
+    text-decoration: underline;
 }
 
 ::-webkit-scrollbar-track {
@@ -173,25 +255,26 @@ input {
 	min-height: 30px;
 	color: #cccccc;
 }
-nav>ul, nav a {
+.misc>nav>ul, .misc>nav a {
     color: #e1d2d2;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-nav>ul>li {
-    display: inline-block;
+.misc>nav>ul>li {
+    display: inline;
+    list-style: none;
     margin: 0;
     padding: 0;
     cursor: default;
 }
-nav>ul>li:after {
+.misc>nav>ul>li:after {
     content: "|";
     margin: 0 8px;
     opacity: .3;
 }
-nav>ul>li:last-child:after {
+.misc>nav>ul>li:last-child:after {
     content: "";
     margin: 0;
 }
