@@ -17,15 +17,28 @@
 </head>
 
 <body>
-    <div class="header-container">
-        <div class="header">
-            <div class="logo">
-                <a href="index.html">/~/</a>
+    <div class="header-container active">
+        <header class="header">
+            <div class="header_wrapper">
+                <div class="logo">
+                    <a href="index.html"><img src="images/steam-logo.svg" height="48px" width="48px"></a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+
+        </header>
         <div class="corner-caret hoverable">&#709;</div>
     </div>
-    
+
     <div class="container">
         <div class="jumbotron">
 
@@ -69,7 +82,7 @@
                 <a href="http://www.emuparadise.me/roms-isos-games.php">Emuparadise</a>&nbsp;
             </div>
 
-            <div class="alert alert-info"> 
+            <div class="alert alert-info">
                 <strong>UF</strong><br />
                 <a href="https://one.uf.edu/">One.UF</a>&nbsp;
                 <a href="http://outlook.com/owa/mail.ufl.edu">Email</a>&nbsp;
@@ -88,8 +101,8 @@
                 <a href="https://8ch.net/t">8/t/</a>&nbsp;
                 <a href="http://4chan.org/t/">4/t/</a>
                 <form method="post" id="tBar" autocomplete="off">
-                    <input type="text" id="tText" maxlength="100" name="8" size="25" 
-                        placeholder="Search The Pirate Bay" tabindex="1">
+                    <input type="text" id="tText" maxlength="100" name="8" size="25" placeholder="Search The Pirate Bay"
+                        tabindex="1">
                 </form>
             </div>
 
@@ -101,25 +114,37 @@
                 <a href="https://www.reddit.com/r/starcitizen">Star Citizen</a>&nbsp;
                 <a href="https://www.reddit.com/r/blackdesertonline">BDO</a>
                 <form method="post" id="rBar">
-                    <input type="text" id="rText" maxlength="24" name="8" size="25"
-                        placeholder="Specify a subreddit..." tabindex="2">
+                    <input type="text" id="rText" maxlength="24" name="8" size="25" placeholder="Specify a subreddit..."
+                        tabindex="2">
                 </form>
             </div>
 
             <footer>
-                <nav>
+                <nav class="misc">
                     <strong><a id="miscBtn" class="hoverable">MISC</strong>
-                        <ul><li><strong>
-                            <a href="https://github.com/">Github</a></li><li>
-                            <a href="http://imgur.com/">Imgur</a></li><li>
-                            <a href="http://pastebin.com/">Pastebin</a></li><li>
-                            <a href="https://archive.org/index.php">Archive</a></li><li>
-                            <a href="https://mega.co.nz/">MEGA</a></li><li>
-                            <a href="https://mail.google.com/mail/">Gmail</a></li><li>
-                            <a href="http://192.168.0.1/">Router</a></li><li>
-                            <a href="http://sovereign.mygamesonline.org/black-desert-tools/simple-beer-calc.html">Beer</a></li><li>
+                    <ul>
+                        <li><strong>
+                                <a href="https://github.com/">Github</a></li>
+                        <li>
+                            <a href="http://imgur.com/">Imgur</a></li>
+                        <li>
+                            <a href="http://pastebin.com/">Pastebin</a></li>
+                        <li>
+                            <a href="https://archive.org/index.php">Archive</a></li>
+                        <li>
+                            <a href="https://mega.co.nz/">MEGA</a></li>
+                        <li>
+                            <a href="https://mail.google.com/mail/">Gmail</a></li>
+                        <li>
+                            <a href="http://192.168.0.1/">Router</a></li>
+                        <li>
+                            <a
+                                href="http://sovereign.mygamesonline.org/black-desert-tools/simple-beer-calc.html">Beer</a>
+                        </li>
+                        <li>
                             <a href="http://www.calcchat.com/book/Calculus-9e/">CalcChat</a>
-                        </strong></ul>
+                            </strong>
+                    </ul>
                 </nav>
             </footer>
 
