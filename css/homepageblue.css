@@ -244,13 +244,14 @@ input {
 }
 .misc>nav>ul, .misc>nav a {
     color: #e1d2d2;
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 .misc>nav>ul>li {
-    display: inline-block;
+    display: inline;
+    list-style: none;
     margin: 0;
     padding: 0;
     cursor: default;
