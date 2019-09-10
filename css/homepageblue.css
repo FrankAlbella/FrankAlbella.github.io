@@ -229,15 +229,15 @@ a:hover, a:focus, a:active {
 	border-radius: 1px;
 	min-height: 60px;
 	text-align: center;
-	position: fixed; /* Sit on top of the page content */
-    width: 50%; /* Full width (cover the whole page) */
-    height: 75%; /* Full height (cover the whole page) */
+	position: fixed;
+    width: 50%;
+    height: 75%;
 	margin: auto;
     top: 0; 
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    z-index: 2;
 	cursor: default;
 }
 
