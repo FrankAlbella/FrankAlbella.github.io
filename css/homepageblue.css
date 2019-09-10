@@ -322,3 +322,21 @@ img.toggle {
     top: 0px !important;
     right: 0px !important;
 }
+
+@media only screen and (max-width: 768px) {
+    .jumbotron {
+        margin: 0px;
+    }
+
+    .header-container {
+        top: 0px;
+    }
+
+    .corner-caret {
+        visibility: hidden;
+    }
+
+    #secretBtn {
+        visibility: hidden;
+    }
+}
