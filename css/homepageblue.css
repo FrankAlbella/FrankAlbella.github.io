@@ -261,6 +261,7 @@ input {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-weight: bold;
 }
 .misc>nav>ul>li {
     display: inline;
