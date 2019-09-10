@@ -340,6 +340,12 @@ img.toggle {
         visibility: hidden;
     }
 
+    #miscOverlay {
+        top: 80px;
+        width: 90%;
+        height: 85%;
+    }
+
     #secretBtn {
         visibility: hidden;
     }
