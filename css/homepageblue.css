@@ -30,7 +30,7 @@ body {
     display: inline-block;
 }
 
-.container {
+.main_container {
     margin: 0 auto;
     max-width: 700px;
 }
@@ -45,13 +45,13 @@ a:hover, a:focus, a:active {
     color: #F7F7F7;
 }
 
-.jumbotron {
+.main_container_inner_wrapper {
     margin: 60px 0;
     text-align: center;
     transition: width .5s, height .5s, margin .5s, padding .5s;
 }
 
-.jumbotron h1 {
+.main_container_inner_wrapper h1 {
     color: inherit;
     font-family: inherit;
     font-size: 72px;
