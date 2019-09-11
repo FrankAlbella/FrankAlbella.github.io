@@ -35,10 +35,6 @@ body {
     max-width: 700px;
 }
 
-input[type=image], img {
-    vertical-align: middle;
-}
-
 a {
     text-decoration: none;
     transition: color .25s;
@@ -66,13 +62,6 @@ a:hover, a:focus, a:active {
     text-rendering: optimizelegibility;
 }
 
-.jumbotron .lead {
-    font-size: 21px;
-    font-weight: 200;
-    line-height: 30px;
-    margin-bottom: 20px;
-    transition: font-size .5s;
-}
 
 .alert {
     background-color: #FCF8E3;
@@ -82,12 +71,6 @@ a:hover, a:focus, a:active {
     padding: 8px 14px;
 }
 
-.alert-error {
-    background-color: #F2DEDE;
-    border-color: #EED3D7;
-    color: #B94A48;
-}
-
 .alert-info {
     background-color: #073642;
     border-color: #093a46;
@@ -95,35 +78,6 @@ a:hover, a:focus, a:active {
     border-radius: 1px;
     min-height: 60px;
     text-align: center;
-}
-
-.alert-news {
-    background-color: #073642;
-    border-color: #093a46;
-    color: #F7F7F7;
-    border-radius: 1px;
-    min-height: 60px;
-    text-align: left;
-}
-
-.headline {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1;
-    vertical-align: baseline;
-    outline: none;
-    text-decoration: none;
-}
-
-.icon {
-    height: 64px;
-    width: 64px;
-    display: inline-block;
-    outline: none;
-}
-
-.icon-steam {
-    background: url('..\\images\\steam\\48.png');
 }
 
 .corner-btn {
@@ -296,31 +250,6 @@ input {
 .misc>nav>ul>li:last-child:after {
     content: "";
     margin: 0;
-}
-
-span.old {
-    text-transform: uppercase;
-    font-size: .8em;
-    border-radius: 1px;
-    background-color: #722726;
-    color: #fff;
-    padding: 2px 8px;
-    margin: 0 4px;
-    font-weight: 200;
-}
-
-section.ded {
-    opacity: .5;
-}
-
-a img {
-    border: none;
-}
-
-img.toggle {
-    position: fixed !important;
-    top: 0px !important;
-    right: 0px !important;
 }
 
 @media only screen and (max-width: 768px) {
