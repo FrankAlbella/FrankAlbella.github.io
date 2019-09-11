@@ -135,7 +135,7 @@ a:hover, a:focus, a:active {
     align-items: center;
 }
 
-.header_wrapper {
+.inner_header_wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
