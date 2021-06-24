@@ -1,0 +1,3 @@
+#!/bin/bash
+
+zip -r homepage.xpi css images scripts about.html index.html manifest.json
