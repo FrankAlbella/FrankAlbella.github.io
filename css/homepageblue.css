@@ -58,7 +58,6 @@ a:hover, a:focus, a:active {
     text-rendering: optimizelegibility;
 }
 
-
 .alert {
     background-color: #FCF8E3;
     border: 5px solid #FBEED5;
@@ -74,6 +73,20 @@ a:hover, a:focus, a:active {
     border-radius: 1px;
     min-height: 60px;
     text-align: center;
+}
+
+.div-about {
+    text-align: left;
+}
+
+.header-about {
+    text-align: center;
+    font-weight: bold;
+}
+
+.image-about {
+    height:210px;
+    width: 210px;
 }
 
 .corner-btn {
