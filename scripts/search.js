@@ -31,6 +31,12 @@ function searchSite(e)
 		case "ecBar":
 			document.location = 'https://www.8ch.net/' + search;
 			break;
+		case "cBar":
+			document.location = 'https://www.reddit.com/user/frankstar10/m/bluepill_all/search/?q=' + search + '&restrict_sr=1&is_multi=1';
+			break;
+		case "dBar":
+				document.location = 'https://dict.naver.com/linedict/zhendict/#/cnen/search?query=' + search;
+				break;
 		default:
 			window.alert("Search box unimplemented! Add to search.js")
 	}
@@ -42,7 +48,9 @@ function searchSite(e)
 
 document.addEventListener('DOMContentLoaded', function () 
 {
-	document.getElementById('tBar').addEventListener('submit', searchSite);
+	document.getElementById('cBar').addEventListener('submit', searchSite);
 	
 	document.getElementById('rBar').addEventListener('submit', searchSite);
+	
+	document.getElementById('dBar').addEventListener('submit', searchSite);
 });
