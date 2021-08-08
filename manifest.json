@@ -9,6 +9,9 @@
   "description": "Overrides the new tab page",
   "version": "1.1",
   "incognito": "spanning",
+  "options_ui": {
+    "page": "options.html"
+  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
