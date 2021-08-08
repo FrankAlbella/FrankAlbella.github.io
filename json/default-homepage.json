@@ -5,9 +5,9 @@
             {
                 "label": "Media",
                 "url": "",
-                "is-secret": false,
-                "is-searchable": false,
-                "search-options": {},
+                "is_secret": false,
+                "is_searchable": false,
+                "search_options": {},
                 "content": [
                     {
                         "label": "Youtube",
@@ -30,9 +30,9 @@
             {
                 "label": "Social Media",
                 "url": "https://en.wikipedia.org/wiki/Social_media",
-                "is-secret": false,
-                "is-searchable": true,
-                "search-options": {
+                "is_secret": false,
+                "is_searchable": true,
+                "search_options": {
                     "label": "Search Reddit...",
                     "url": "https://www.reddit.com/search/?q="
                 },
