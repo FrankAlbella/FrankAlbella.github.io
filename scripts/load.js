@@ -4,6 +4,7 @@ readFile(default_file_path, function (_res) {
     const json = JSON.parse(_res);
     addAlerts(json.alerts)
     addMisc(json.misc);
+    addMiscMenu(json.misc_menu);
     console.log(json);
 
 });
@@ -15,10 +16,14 @@ function addAlerts(alerts) {
     }
 
     const main_container = document.getElementById("alerts-div");
+    const secret_container = document.getElementById("secret-alerts-div");
 
     alerts.content.forEach(alert_info => {
+        // Create alert element
         var alert = document.createElement("div");
         alert.className = "alert alert-info";
+        if (alert_info.is_secret)
+            alert.className += " secret";
 
         // Create header label
         var label = document.createElement("a");
@@ -26,6 +31,7 @@ function addAlerts(alerts) {
         label.innerText = alert_info.label;
         if (alert_info.url != "")
             label.href = alert_info.url;
+
 
         alert.appendChild(label);
         alert.appendChild(document.createElement("br"));
@@ -53,7 +59,11 @@ function addAlerts(alerts) {
             alert.appendChild(form);
         }
 
-        main_container.appendChild(alert);
+        // Finally append the alert to it's appropriate container
+        if (alert_info.is_secret)
+            secret_container.appendChild(alert);
+        else
+            main_container.appendChild(alert);
     });
 }
 
@@ -71,6 +81,21 @@ function addMisc(misc) {
         link.href = hyperlink.url;
         listItem.appendChild(link);
         misc_list.appendChild(listItem);
+    });
+}
+
+function addMiscMenu(misc) {
+    if (misc.version != "1") {
+        console.log("Unsupported alert version! Version: " + misc.version)
+        return;
+    }
+    const misc_menu = document.getElementById("miscOverlay");
+
+    misc.content.forEach(hyperlink => {
+        var link = document.createElement("a");
+        link.innerText = hyperlink.label + "  ";
+        link.href = hyperlink.url;
+        misc_menu.appendChild(link);
     });
 }
 

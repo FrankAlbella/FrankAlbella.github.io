@@ -229,6 +229,11 @@ a:hover, a:focus, a:active {
     cursor: default;
 }
 
+#miscOverlay>a:after {
+    content:"\a";
+    white-space: pre;
+}
+
 select {
     background-color: #0a4250;
     min-height: 30px;
