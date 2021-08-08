@@ -34,7 +34,8 @@
                 "is_searchable": true,
                 "search_options": {
                     "label": "Search Reddit...",
-                    "url": "https://www.reddit.com/search/?q="
+                    "url": "https://www.reddit.com/search/",
+                    "name": "q"
                 },
                 "content": [
                     {
