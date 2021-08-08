@@ -55,6 +55,31 @@
                         "url": "https://www.reddit.com/"
                     }
                 ]
+            },
+            {
+                "label": "Secret",
+                "url": "https://en.wikipedia.org/wiki/Secrecy",
+                "is_secret": true,
+                "is_searchable": false,
+                "search_options": {},
+                "content": [
+                    {
+                        "label": "EngineeringPorn",
+                        "url": "https://www.reddit.com/r/EngineeringPorn/"
+                    },
+                    {
+                        "label": "FoodPorn",
+                        "url": "https://www.reddit.com/r/FoodPorn/"
+                    },
+                    {
+                        "label": "EarthPorn",
+                        "url": "https://www.reddit.com/r/EarthPorn/"
+                    },
+                    {
+                        "label": "MapPorn",
+                        "url": "https://www.reddit.com/r/MapPorn/"
+                    }
+                ]
             }
         ]
     },
@@ -72,6 +97,15 @@
             {
                 "label": "Archive",
                 "url": "https://archive.org/index.php"
+            }
+        ]
+    },
+    "misc_menu": {
+        "version": "1",
+        "content": [
+            {
+                "label":"Source Code",
+                "url":"https://github.com/FrankAlbella/FrankAlbella.github.io"
             }
         ]
     }
