@@ -1,0 +1,77 @@
+{
+    "alerts": {
+        "version": "1",
+        "content": [
+            {
+                "label": "Media",
+                "url": "",
+                "is-secret": false,
+                "is-searchable": false,
+                "search-options": {},
+                "content": [
+                    {
+                        "label": "Youtube",
+                        "url": "https://youtube.com/"
+                    },
+                    {
+                        "label": "Twitch",
+                        "url": "https://twitch.tv/"
+                    },
+                    {
+                        "label": "Netflix",
+                        "url": "https://www.netflix.com/browse"
+                    },
+                    {
+                        "label": "Plex",
+                        "url": "http://127.0.0.1:32400/web/index.html"
+                    }
+                ]
+            },
+            {
+                "label": "Social Media",
+                "url": "https://en.wikipedia.org/wiki/Social_media",
+                "is-secret": false,
+                "is-searchable": true,
+                "search-options": {
+                    "label": "Search Reddit...",
+                    "url": "https://www.reddit.com/search/?q="
+                },
+                "content": [
+                    {
+                        "label": "Instagram",
+                        "url": "https://www.instagram.com/"
+                    },
+                    {
+                        "label": "Twitter",
+                        "url": "https://twitter.com/"
+                    },
+                    {
+                        "label": "Facebook",
+                        "url": "https://www.netflix.com/browse"
+                    },
+                    {
+                        "label": "Reddit",
+                        "url": "https://www.reddit.com/"
+                    }
+                ]
+            }
+        ]
+    },
+    "misc": {
+        "version": "1",
+        "content": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/"
+            },
+            {
+                "label": "Pastebin",
+                "url": "http://pastebin.com/"
+            },
+            {
+                "label": "Archive",
+                "url": "https://archive.org/index.php"
+            }
+        ]
+    }
+}
