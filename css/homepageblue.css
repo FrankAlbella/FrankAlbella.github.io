@@ -40,6 +40,10 @@ a {
 a:hover, a:focus, a:active {
     color: #F7F7F7;
 }
+.alert>a+a:before {
+    content: "";
+    margin: 0 2px;
+}
 
 .main_container_inner_wrapper {
     margin: 60px 0;
@@ -73,6 +77,10 @@ a:hover, a:focus, a:active {
     border-radius: 1px;
     min-height: 60px;
     text-align: center;
+}
+
+.label-alert {
+    font-weight: bold;
 }
 
 .div-about {
