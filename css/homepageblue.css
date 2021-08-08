@@ -45,6 +45,10 @@ a:hover, a:focus, a:active {
     margin: 0 2px;
 }
 
+.secret {
+    display: none;
+}
+
 .main_container_inner_wrapper {
     margin: 60px 0;
     text-align: center;
