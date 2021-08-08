@@ -12,6 +12,7 @@
     <script src="scripts/search.js"></script>
     <script src="scripts/overlay.js"></script>
     <script src="scripts/header.js"></script>
+    <script src="scripts/load.js"></script>
 </head>
 
 <body>
@@ -43,7 +44,6 @@
 
     <div class="main_container">
         <div class="main_container_inner_wrapper">
-
             <header>
                 <h1 href="#" id="secretBtn">/~/</h1>
             </header>
@@ -56,85 +56,13 @@
                 <a href="https://www.ecured.cu/EcuRed:Enciclopedia_cubana">EcuRed</a>
             </div>
 
-            <div class="alert alert-info">
-                <strong>Media</strong><br />
-                <a href="https://youtube.com/">Youtube</a>
-                <a href="https://www.instagram.com/">Instagram</a>
-                <a href="https://twitch.tv/">Twitch</a>
-                <a href="https://twitter.com">Twitter</a>
-                <a href="http://127.0.0.1:32400/web/index.html">Plex</a>
-                <a href="https://www.netflix.com/browse">Netflix</a>
-            </div>
-
-            <div class="alert alert-info">
-                <strong>UF</strong><br />
-                <a href="https://one.uf.edu/">One.UF</a>
-                <a href="http://outlook.com/owa/mail.ufl.edu">Email</a>
-                <a href="https://ufl.instructure.com/">Canvas</a>
-                <a href="https://surplus.ufl.edu/">Surplus</a>
-            </div>
-
-            <div class="alert alert-info">
-                <strong><a href="https://www.reddit.com/r/ChineseLanguage/">中文</a></strong><br />
-                <a href="https://www.baidu.com/">百度</a>
-                <a href="https://www.bilibili.com/">哔哩哔哩</a>
-                <a href="https://weibo.com/">微博</a>
-                <a href="https://dict.naver.com/linedict/zhendict/#/cnen/home/">词典</a>
-                <a href="https://fanyi.baidu.com/">翻译</a>
-                <form method="post" id="dBar">
-                    <input type="text" id="dText" maxlength="24" name="8" size="25" placeholder=" 搜索词典..."
-                        tabindex="1">
-                </form>
-            </div> 
-            
-            <div class="alert alert-info">
-                <strong><a href="https://www.reddit.com/user/frankstar10/m/bluepill_all/">Communism</a></strong><br />
-                <a href="https://lemmygrad.ml/">Lemmygrad</a>
-                <a href="https://www.marxists.org/">Marxists</a>
-                <a href="https://en.prolewiki.org/wiki/ProleWiki:Main_page">ProleWiki</a>
-                <form method="post" id="cBar">
-                    <input type="text" id="cText" maxlength="24" name="8" size="25" placeholder="Search /m/bluepill_all..."
-                        tabindex="1">
-                </form>
-            </div>          
-
-            <div class="alert alert-info">
-                <strong><a href="https://www.reddit.com">Reddit</a></strong><br />
-                <a href="https://www.reddit.com/r/DotA2">Dota 2</a>
-                <a href="https://www.reddit.com/r/emulation">Emulation</a>
-                <a href="https://www.reddit.com/r/Okbuddyretard">Okbuddyretard</a>
-                <a href="https://www.reddit.com/user/frankstar10/m/linux/">/m/linux</a>
-                <form method="post" id="rBar">
-                    <input type="text" id="rText" maxlength="24" name="8" size="25" placeholder="Specify a subreddit..."
-                        tabindex="1">
-                </form>
+            <div id="alerts-div">
             </div>
 
             <footer class="misc">
                 <nav>
-                    <strong><a id="miscBtn" class="hoverable">MISC</strong>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/">Github</a>
-                        </li>
-                        <li>
-                            <a href="http://imgur.com/">Imgur</a>
-                        </li>
-                        <li>
-                            <a href="http://pastebin.com/">Pastebin</a>
-                        </li>
-                        <li>
-                            <a href="https://archive.org/index.php">Archive</a>
-                        </li>
-                        <li>
-                            <a href="https://mega.co.nz/">MEGA</a>
-                        </li>
-                        <li>
-                            <a href="https://mail.google.com/mail/">Gmail</a>
-                        </li>
-                        <li>
-                            <a href="http://192.168.0.1/">Router</a>
-                        </li>
+                    <a id="miscBtn" class="hoverable">MISC</a>
+                    <ul id="miscList">
                     </ul>
                 </nav>
             </footer>
