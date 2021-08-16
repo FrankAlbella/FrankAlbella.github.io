@@ -1,12 +1,12 @@
-const default_file_path = "/home/frank/repos/FrankAlbella.github.io/json/default-homepage.json";
+var browser = browser || chrome;
+const url = browser.extension.getURL("json/default-homepage.json");
 
-readFile(default_file_path, function (_res) {
-    const json = JSON.parse(_res);
+$.getJSON(url, function (_res) {
+    const json = _res;
     addAlerts(json.alerts)
     addMisc(json.misc);
     addMiscMenu(json.misc_menu);
     console.log(json);
-
 });
 
 function addAlerts(alerts) {
@@ -98,23 +98,3 @@ function addMiscMenu(misc) {
         misc_menu.appendChild(link);
     });
 }
-
-// temp way to load files
-function readFile(_path, _cb) {
-
-    fetch(_path, { mode: 'same-origin' })   // <-- important
-
-        .then(function (_res) {
-            return _res.blob();
-        })
-
-        .then(function (_blob) {
-            var reader = new FileReader();
-
-            reader.addEventListener("loadend", function () {
-                _cb(this.result);
-            });
-
-            reader.readAsText(_blob);
-        });
-};

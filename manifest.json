@@ -24,5 +24,8 @@
   },
   "permissions": [
     "storage"
+  ],
+  "web_accessible_resources": [
+    "json/*"
   ]
 }
