@@ -48,69 +48,73 @@
                 <h1 href="#" id="secretBtn">/~/</h1>
             </header>
 
-            <div hidden id="miscOverlay">
+            <div id="miscOverlay" style="display: none;" hidden="">
                 <a id="miscExitBtn" class="corner-btn hoverable">x</a>
-                <strong>Miscellaneous</strong><br />
+                <strong>Miscellaneous</strong><br>
                 <a href="https://github.com/muckSponge/MaterialFox">MaterialFox</a><br>
-                <a href="https://the-eye.eu/public/rom/Nintendo%20Switch/">Switch Games</a>
+                <a href="https://the-eye.eu/public/rom/Nintendo%20Switch/">Switch Games</a><br>
+                <a href="https://www.ecured.cu/EcuRed:Enciclopedia_cubana">EcuRed</a>
             </div>
 
             <div class="alert alert-info">
-                <strong>Media</strong><br />
-                <a href="https://youtube.com/">Youtube</a>&nbsp;
-                <a href="https://soundcloud.com/stream">Soundcloud</a>&nbsp;
-                <a href="https://twitch.tv/">Twitch</a>&nbsp;
-                <a href="https://twitter.com">Twitter</a>&nbsp;
-                <a href="http://127.0.0.1:32400/web/index.html">Plex</a>&nbsp;
-                <a href="https://www.netflix.com/browse">Netflix</a>
+                <strong>Media</strong><br>
+                <div class="hyperlinks">
+                    <a href="https://youtube.com/">Youtube</a>
+                    <a href="https://www.instagram.com/">Instagram</a>
+                    <a href="https://twitch.tv/">Twitch</a>
+                    <a href="https://twitter.com">Twitter</a>
+                    <a href="http://127.0.0.1:32400/web/index.html">Plex</a>
+                    <a href="https://www.netflix.com/browse">Netflix</a>
+                </div>
             </div>
 
             <div class="alert alert-info">
-                <strong><a href="http://emulation.gametechwiki.com/index.php/Main_Page">Emulation</strong><br />
-                <a href="https://dolphin-emu.org/">Dolphin</a>&nbsp;
-                <a href="https://yuzu-emu.org/">Yuzu</a>&nbsp;
-                <a href="http://cemu.info/">CEMU</a>&nbsp;
-                <a href="https://rpcs3.net/">RPCS3</a>
+                <strong>UF</strong><br>
+                <div class="hyperlinks">
+                    <a href="https://one.uf.edu/">One.UF</a>
+                    <a href="http://outlook.com/owa/mail.ufl.edu">Email</a>
+                    <a href="https://ufl.instructure.com/">Canvas</a>
+                    <a href="https://surplus.ufl.edu/">Surplus</a>
+                </div>
             </div>
 
             <div class="alert alert-info">
-                <strong>UF</strong><br />
-                <a href="https://one.uf.edu/">One.UF</a>&nbsp;
-                <a href="http://outlook.com/owa/mail.ufl.edu">Email</a>&nbsp;
-                <a href="https://ufl.instructure.com/">Canvas</a>&nbsp;
-                <a href="https://surplus.ufl.edu/">Surplus</a>
+                <strong><a href="https://www.reddit.com/r/ChineseLanguage/">中文</a></strong><br>
+                <div class="hyperlinks">
+                    <a href="https://www.baidu.com/">百度</a>
+                    <a href="https://www.bilibili.com/">哔哩哔哩</a>
+                    <a href="https://weibo.com/">微博</a>
+                    <a href="https://dict.naver.com/linedict/zhendict/#/cnen/home/">词典</a>
+                    <a href="https://fanyi.baidu.com/">翻译</a>
+                    <form method="post" id="dBar">
+                        <input type="text" id="dText" maxlength="24" name="8" size="25" placeholder=" 搜索词典..."
+                            tabindex="1">
+                    </form>
+                </div>
             </div>
 
             <div class="alert alert-info">
-                <strong><a href="https://www.reddit.com">Reddit</a></strong><br />
-                <a href="https://www.reddit.com/r/DotA2">Dota 2</a>&nbsp;
-                <a href="https://www.reddit.com/r/emulation">Emulation</a>&nbsp;
-                <a href="https://www.reddit.com/r/Okbuddyretard">Okbuddyretard</a>&nbsp;
-                <a href="https://www.reddit.com/user/frankstar10/m/linux/">/m/linux</a>
+                <strong><a href="https://www.reddit.com">Reddit</a></strong><br>
+                <div class="hyperlinks">
+                    <a href="https://www.reddit.com/r/DotA2">Dota 2</a>
+                    <a href="https://www.reddit.com/r/emulation">Emulation</a>
+                    <a href="https://www.reddit.com/r/morrowind">Morrowind</a>
+                    <a href="https://www.reddit.com/r/linux_gaming">Linux Gaming</a>
+                </div>
                 <form method="post" id="rBar">
                     <input type="text" id="rText" maxlength="24" name="8" size="25" placeholder="Specify a subreddit..."
                         tabindex="1">
                 </form>
             </div>
 
-            <div class="alert alert-info">
-                <strong>Torrents</strong><br />
-                <a href="https://kickass.cd/">Kickass</a>&nbsp;
-                <a href="https://thepiratebay.org/">PirateBay</a>&nbsp;
-                <a href="https://nyaa.si/">Nyaa</a>&nbsp;
-                <a href="https://the-eye.eu/">The Eye</a>
-                <form method="post" id="tBar" autocomplete="off">
-                    <input type="text" id="tText" maxlength="100" name="8" size="25" placeholder="Search The Pirate Bay"
-                        tabindex="2">
-                </form>
-            </div>
-
             <footer class="misc">
                 <nav>
-                    <strong><a id="miscBtn" class="hoverable">MISC</strong>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/">Github</a>
+                    <strong><a id="miscBtn" class="hoverable">MISC</a></strong><a id="miscBtn" class="hoverable">
+                    </a>
+                    <ul><a id="miscBtn" class="hoverable">
+                        </a>
+                        <li><a id="miscBtn" class="hoverable">
+                            </a><a href="https://github.com/">Github</a>
                         </li>
                         <li>
                             <a href="http://imgur.com/">Imgur</a>

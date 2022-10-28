@@ -22,14 +22,11 @@ function searchSite(e)
 	
 	switch(source)
 	{
-		case "tBar":
-			document.location = 'https://thepiratebay.org/search/' + search;
-			break;
 		case "rBar":
 			document.location = 'http://www.reddit.com/r/' + search;
 			break;
-		case "ecBar":
-			document.location = 'https://www.8ch.net/' + search;
+		case "dBar":
+			document.location = 'https://dict.naver.com/linedict/zhendict/#/cnen/search?query=' + search;
 			break;
 		default:
 			window.alert("Search box unimplemented! Add to search.js")
@@ -42,7 +39,7 @@ function searchSite(e)
 
 document.addEventListener('DOMContentLoaded', function () 
 {
-	document.getElementById('tBar').addEventListener('submit', searchSite);
+	document.getElementById('cBar').addEventListener('submit', searchSite);
 	
 	document.getElementById('rBar').addEventListener('submit', searchSite);
 });
