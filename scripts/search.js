@@ -39,7 +39,7 @@ function searchSite(e)
 
 document.addEventListener('DOMContentLoaded', function () 
 {
-	document.getElementById('cBar').addEventListener('submit', searchSite);
+	document.getElementById('dBar').addEventListener('submit', searchSite);
 	
 	document.getElementById('rBar').addEventListener('submit', searchSite);
 });
